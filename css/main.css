@@ -1,0 +1,212 @@
+
+
+@font-face {
+    font-family: 'Museo 700';
+    src: url('http://tangledindesign.com/codepen/fonts/Museo700-Regular-webfont.eot');
+    src: url('http://tangledindesign.com/codepen/fonts/Museo700-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://tangledindesign.com/codepen/fonts/Museo700-Regular-webfont.woff') format('woff'),
+         url('http://tangledindesign.com/codepen/fonts/Museo700-Regular-webfont.ttf') format('truetype'),
+         url('http://tangledindesign.com/codepen/fonts/Museo700-Regular-webfont.svg#SketchBlockBold') format('svg');
+}
+body {
+	background: #333;
+	color: #fff;
+}
+.links{
+	overflow: auto;
+	width:100%;
+}
+.button{
+	padding:10px;
+	border: 2px solid #fff79e;
+	border-radius:5px;
+	cursor: pointer;
+	text-align: center;
+	margin:30px 10px;
+}
+.button:hover{
+	background-color:#fff79e;
+}
+a{
+	font: 2em Montserrat;
+	/* font-style: italic; */
+	color:#fff79e;
+}
+a:focus,a:visited{
+	color:#fff79e;
+}
+.button:hover{
+	color:#333;
+}
+a:hover{
+	text-decoration: none;
+}
+.button.left{
+	float:left;
+}
+.button.right{
+	float:right;
+}
+h1{
+	font-family: 'Overpass Mono', monospace;
+	font-size:9em;
+	text-decoration: underline;
+	text-align: center;
+}
+h5{
+	font: 2.65em Montserrat;
+	text-align: center;
+	font-style: italic;
+	/* margin-bottom:50px; */
+}
+h6{
+	font: 1em Montserrat;
+	text-align: center;
+	font-style: italic;
+	margin-bottom:50px;
+}
+	.container {
+        width:60%;
+		min-width: 320px;
+		margin: 140px auto;
+		position: relative;
+		margin-top:100px;
+	}
+
+	.poem{
+		/* overflow:auto; */
+		position: relative;
+	}
+
+	blockquote {
+        width:100%;
+		/* min-width: 300px; */
+		font: 1.65em Montserrat;
+		letter-spacing: .075em;
+		float: left;
+		padding: 45px 0 30px 25px;
+		margin: 0;
+		border-top: 2px dotted #858585;
+		border-bottom: 2px dotted #858585;
+        display:inline-block;
+		margin-bottom:20px;
+		padding-right:10%;
+		/*-webkit-transform: rotate(-3deg);
+		-moz-transform: rotate(-3deg);*/
+	}
+
+	.poem:before {
+		content: "“";
+		font-size: 13em;
+		position: absolute;
+		left: -100px;
+		color: #666;
+		top:0px;
+	}
+
+	.poem:after {
+		content: "”";
+		font-size: 13em;
+		position: absolute;
+		right: -100px;
+		top: 200px;
+		color: #666;
+	}
+
+		blockquote:first-line {
+            
+			font-size: 1.85em;
+			color: #858585;
+            display: inline-block;
+		}
+
+		blockquote:first-letter {
+			/* font-size: 2.9em;
+			text-transform: lowercase;
+			float: left;
+			line-height: .52em;
+			margin-right: -18px;
+			position: relative;
+			z-index: 1;
+			top:0; */
+			/* font-size:1.5em;
+			line-height: .52em; */
+		}
+
+		blockquote strong:first-child {
+			margin-left: 8px;
+			letter-spacing: 0;
+		}
+
+		blockquote strong:last-child {
+			font: 2em "Museo 700";
+			text-transform: uppercase;
+			letter-spacing: 0;
+		}
+
+		blockquote em {
+            font-size:1.5em;
+			border-bottom: 2px dotted #858585;
+		}
+
+		blockquote b {
+			margin-top: 10px;
+			font-family: 'Overpass Mono', monospace;
+			letter-spacing: .15em;
+            font-size:3em;
+		}
+
+		/* @-moz-document url-prefix() { 
+
+			blockquote:first-letter {
+				margin-top: -29px;
+			}
+
+		} */
+@media(max-width:992px){
+	.button.left,.button.right{
+		float:none;
+	}
+}
+@media(max-width:768px){
+	.container{
+		width:80%;
+	}
+	blockquote:first-line {
+		font-size: 1.65em;
+	}
+	.poem:before,.poem:after {
+		content: none;
+	}
+	.container{
+		margin: 50px auto;
+	}
+}
+
+@media(max-width:414px){
+	.container{
+		margin: auto;
+	}
+	h1{
+		font-size: 6em;
+	}
+	h5{
+		font-size:1.65em;
+	}
+	h6{
+		font-size:.8em;
+	}
+	blockquote{
+		font-size:1em;
+		padding: 25px 0 10px 25px;
+	}
+	blockquote em{
+		font-size:1.2em;
+	}
+	blockquote b{
+		font-size:2em;
+	}
+	a{
+		font-size:1.5em;
+	}
+}
